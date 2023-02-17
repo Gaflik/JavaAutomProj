@@ -15,7 +15,7 @@ public class SignUpTest {
     private WebDriver driver;
     private signUp page;
 
-    private static final Logger logger = LoggerFactory.getLogger(SignUpTest.class);
+    private static final Logger log = LoggerFactory.getLogger(SignUpTest.class);
 
     @BeforeMethod
     public void setUp() {
@@ -26,7 +26,7 @@ public class SignUpTest {
     }
     @Test (priority = 0, description="SigUP scenario.")
     public void signUp() {
-        logger.info("Pass");
+        log.info("Pass");
         page = new signUp(driver);
         page.typeEmail("gptest@bk.ru");
         page.clickConfirm();
