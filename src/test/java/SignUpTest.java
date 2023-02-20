@@ -1,3 +1,4 @@
+package test.java;
 import app.AppConfig;
 import app.pages.signUp;
 import org.apache.logging.log4j.LogManager;
@@ -8,7 +9,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
 
 

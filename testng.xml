@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="signUpSuite">
+    <test name="SignUpTest">
+        <classes>
+            <class name="test.java.SignUpTest">
+            </class>
+        </classes>
+    </test>
+</suite>
