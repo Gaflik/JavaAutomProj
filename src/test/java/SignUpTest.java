@@ -1,6 +1,8 @@
 package test.java;
+
 import app.AppConfig;
 import app.pages.signUp;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import java.time.Duration;
 
 
@@ -26,6 +29,7 @@ public class SignUpTest {
         log.info("Chrome is started");
     }
     @Test (priority = 0, description="SigUP scenario.")
+    @Step("Enter email {0} into field")
     public void signUp() {
         page = new signUp(driver);
         page.typeEmail("gptest@bk.ru");
