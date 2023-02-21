@@ -29,7 +29,7 @@ public class SignUpTest {
         log.info("Chrome is started");
     }
     @Test (priority = 0, description="SigUP scenario.")
-    @Step("Enter email {0} into field")
+    @Step("Enter email {typeEmail} into field")
     public void signUp() {
         page = new signUp(driver);
         page.typeEmail("gptest@bk.ru");
