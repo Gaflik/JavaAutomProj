@@ -6,4 +6,9 @@
             <class name = "apiTest"/>
         </classes>
     </test>
+    <test name = "Petstore_Testing2">
+        <classes>
+            <class name = "apiTest2"/>
+        </classes>
+    </test>
 </suite>
