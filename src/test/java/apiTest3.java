@@ -40,14 +40,14 @@ public class apiTest3 {
                 .then()
                 .statusCode(200)
                 .body("message", equalTo("Successfully! Record has been added."));
-        Thread.sleep(30000);
+        Thread.sleep(60000);
     }
 
 
     @Test (priority = 2, description="GET request")
     @Step("Executing GET request")
 
-    public void readDetail() {
+    public void readDetail() throws InterruptedException {
 
         RestAssured.given()
                 .when()
@@ -56,13 +56,13 @@ public class apiTest3 {
                 .statusCode(200)
                 .assertThat()
                 .body("data.id", equalTo(1));
+        Thread.sleep(60000);
     }
 
     @Test (priority = 3, description="PUT request")
     @Step("Executing Put request")
 
-    public void putDetails()
-    {
+    public void putDetails() throws InterruptedException {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("name", "test");
         jsonObject.put("salary", "123");
@@ -75,11 +75,12 @@ public class apiTest3 {
                 .put("update/21")
                 .then()
                 .statusCode(200);
+        Thread.sleep(60000);
     }
 
     @Test (priority = 4, description = "DELETE request")
     @Step("Executing Delete request")
-    public void deleteDetails() {
+    public void deleteDetails() throws InterruptedException {
         RestAssured.given()
                 .when()
                 .delete("/delete/2")
@@ -87,6 +88,7 @@ public class apiTest3 {
                 .statusCode(200)
                 .assertThat()
                 .body("message", equalTo("Successfully! Record has been deleted"));
+        Thread.sleep(60000);
     }
 }
 
