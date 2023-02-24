@@ -11,4 +11,14 @@
             <class name = "apiTest2"/>
         </classes>
     </test>
+    <test name = "dummy_Testing">
+        <classes>
+            <class name = "apiTest3"/>
+        </classes>
+    </test>
+    <test name = "reqres_Testing">
+        <classes>
+            <class name = "apiTest4"/>
+        </classes>
+    </test>
 </suite>
