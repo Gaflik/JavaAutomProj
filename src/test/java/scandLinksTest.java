@@ -34,7 +34,7 @@ public class scandLinksTest {
                 httpURLConnect.setConnectTimeout(1000);
                 httpURLConnect.connect();
                 if (httpURLConnect.getResponseCode() >= 400) {
-                    System.out.println("Broken link: " + urlLinks + " - " + httpURLConnect.getResponseMessage() + " - " +  httpURLConnect.getResponseCode());
+                    System.out.println("Broken link: " + urlLinks + " - " + httpURLConnect.getResponseMessage());
                 }
                 else {
                     System.out.println("OK: " + urlLinks + " - " + httpURLConnect.getResponseMessage());
