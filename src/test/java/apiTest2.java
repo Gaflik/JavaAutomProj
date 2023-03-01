@@ -27,8 +27,8 @@ public class apiTest2 {
     @Step("Executing POST request")
     public void postDetails() {
 // prepare request body in format {"xxxx":"yyyy"}
-        JSONObject jsonObject = new JSONObject();
         // сздаем JSONObject, который заполняем след. данными
+        JSONObject jsonObject = new JSONObject();
         jsonObject.put("name", petName);
         jsonObject.put("status", "available");
 
